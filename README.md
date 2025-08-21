@@ -97,7 +97,7 @@ How to Use
     
 2.  Run credit_card_default.py to generate predictions.
     
-3.  Open the model_results.csv and roc_data.csc files in Tableau.
+3.  Open the model_results.csv and roc_data.csv files in Tableau.
     
 4.  Load the pre-built Tableau workbook (Credit_Default_Dashboard.twb)
     
