@@ -5,7 +5,7 @@ import seaborn as sns
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_curve
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_curve, roc_auc_score
 
 df = pd.read_excel("default of credit card clients.xls", header=1)
 
@@ -51,6 +51,8 @@ except AttributeError:
     except AttributeError:
         y_pred_proba = [0.5] * len(y_test)
 
+auc = roc_auc_score(y_test, y_pred_proba)
+print("AUC:", auc)
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred))
