@@ -40,9 +40,9 @@ python src/credit_card_default.py
 
 This will create two CSV files in the outputs/ folder:
 
-results_with_features.csv → predictions and probabilities
+ - results_with_features.csv → predictions and probabilities
 
-roc_data.csv → FPR/TPR values for ROC curve
+ - roc_data.csv → FPR/TPR values for ROC curve
 
 Open Tableau and load the CSVs to explore the Credit Default Dashboard.
 
