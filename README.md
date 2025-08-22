@@ -1,8 +1,8 @@
-Credit Card Default Prediction
+# **Credit Card Default Prediction**
 
 This project predicts whether a credit card customer will default next month using a machine learning approach in Python, with results communicated through an interactive Tableau dashboard.
 
-Project Overview
+## **Project Overview**
 
 Dataset: Taiwan Credit Card Default (UCI ML Repository)
 
@@ -10,7 +10,7 @@ Goal: Build a baseline predictive model and visualize its performance with clear
 
 Output: A logistic regression model, evaluation metrics, and Tableau visuals including confusion matrix, ROC curve, and probability distributions.
 
-Tools & Technologies
+## **Tools & Technologies**
 
 Python: pandas, scikit-learn, matplotlib, seaborn
 
@@ -18,7 +18,7 @@ Tableau: dashboard for evaluation and storytelling
 
 GitHub: reproducible code and stored outputs for Tableau
 
-Workflow
+## **Workflow**
 
 Data Preparation – load, clean, and split the dataset
 
@@ -30,7 +30,7 @@ Export Results – save predictions and ROC curve points to CSV
 
 Visualization in Tableau – import CSVs and build an evaluation dashboard
 
-How to Run
+## **How to Run**
 
 Install dependencies:
 pip install -r requirements.txt
@@ -46,7 +46,7 @@ roc_data.csv → FPR/TPR values for ROC curve
 
 Open Tableau and load the CSVs to explore the Credit Default Dashboard.
 
-Results
+## **Results**
 
 Accuracy: 80.65%
 
@@ -58,7 +58,7 @@ AUC: 0.7045
 
 Interpretation: Accuracy and precision are strong for a first-pass model. AUC of 0.70 shows moderate separation ability. Recall is low, meaning the model misses many true defaults — an area for improvement with threshold tuning or resampling.
 
-Dashboard Features
+## **Dashboard Features**
 
 KPIs: Accuracy, Precision, Recall, AUC
 
@@ -68,7 +68,7 @@ ROC Curve: model separation power vs. baseline
 
 Probability Distribution: predicted probabilities by actual default outcome
 
-Next Steps
+## **Next Steps**
 
 Adjust classification thresholds to increase recall
 
@@ -78,6 +78,6 @@ Test advanced models (Random Forest, XGBoost)
 
 Add a Tableau parameter for threshold “what-if” analysis
 
-Data Source
+## **Data Source**
 
-UCI Machine Learning Repository — Default of Credit Card Clients
+UCI Machine Learning Repository — *Default of Credit Card Clients*
